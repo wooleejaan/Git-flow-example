@@ -2,6 +2,8 @@
 
 ### Git Flow 개요 
 
+![](./images/beautiful-gitflow-workflow-diagram.png)
+
 - main(master) : 기본/메인/제품 브랜치 
 - dev(develop) : 다음 제품 출시를 위해 여러 기능을 병합하는 브랜치 
 - feature/* : 각 기능 개발을 위한 브랜치 (feature로 시작하는 여러 기능 이름) 
@@ -115,7 +117,7 @@ git checkout dev
 git merge feature/A # 이렇게 병합을 하면 아래 그림처럼 메시지가 뜨는데, 
 ```
 
-![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/28c82037-82e1-4e18-9f89-1f58f21a3f09/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-12-14_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.32.24.png)
+![](./images/merge-message.png)
 
 `#`으로 처리된 글들은 무시되는 주석이고 
 위에 기본적으로 `Merge branch ‘feature/A’ into dev` 메시지가 작성되어 있음. 
@@ -166,4 +168,5 @@ git commit -m '1.1.1'
 
 git-flow 전략은 팀마다 당연히 다르다. 
 지금까지 한 예제를 `git log —graph —oneline —all` 로 확인해보면 아래와 같다.
-![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a509f940-37f8-4b55-8cd6-67ec272cce76/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-12-14_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.50.29.png)
+
+![](./images/result-graph.png)
