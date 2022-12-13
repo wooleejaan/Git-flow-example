@@ -180,6 +180,9 @@ git commit -m '1.1.1'
 
 git-flow 전략은 팀마다 당연히 다르다.
 
+dev, feature/A,B는 개발을 위한 브랜치들이고
+release, main, hotfix/lowercase는 배포를 위한 브랜치들이다.
+
 지금까지 한 예제를 `git log —graph —oneline —all` 로 확인해보면 아래와 같다.
 
 ![](./images/result-graph.png)
